@@ -1,23 +1,29 @@
 package com;
+
 public class Employee {
 
-  private int id;
-  private String name;
-  
-  public void setId(int id){
-  this.id=id;  
-  }
+	private int id;
+	private String name;
 
- public int getId(){
- return id;
-}
+	public void setId(int id) {
+		this.id = id;
+	}
 
- public void setName(String name){
-  this.name=name;  
-  }
+	public int getId() {
+		return id;
+	}
 
- public String getName(){
- return name;
-}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + "]";
+	}
 
 }
